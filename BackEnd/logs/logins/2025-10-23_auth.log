@@ -1,0 +1,2 @@
+[2025-10-23T12:01:54.705697-03:00] auth.INFO: [App\Controllers\AuthController::login] : matias.caldarone@gmail.com [] []
+[2025-10-23T12:02:03.982734-03:00] auth.INFO: [App\Controllers\AuthController::login] : matias.caldarone@gmail.com [] []

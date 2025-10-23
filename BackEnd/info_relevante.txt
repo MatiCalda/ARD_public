@@ -1,0 +1,7 @@
+el header de Autorization es bloqueado en el servidor, asi que se necesita usar "X-Authorization"
+
+si hay que modificar una venta, hay que darla de baja y rehacerla
+
+Nuevas Funcionalidades:
+- un apartado donde muestre los productos con bajo stock (puedo hacer que mande un mail a fin de mes notificando esto)
+- agregar columna en sotck de stok minimo para comprar con el actual

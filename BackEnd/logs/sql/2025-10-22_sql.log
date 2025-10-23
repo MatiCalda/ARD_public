@@ -1,0 +1,8 @@
+[2025-10-22 16:06:45] - Error: SQLSTATE[HY000] [1049] Unknown database 'ard'
+[2025-10-22 16:06:59] - Error: SQLSTATE[HY000] [1049] Unknown database 'ard'
+[2025-10-22 16:07:44] - Ejecutado sql/reset.sql correctamente
+[2025-10-22 16:07:47] - Error: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'admin' for key 'roles.nombre'
+[2025-10-22 16:08:39] - Ejecutado sql/reset.sql correctamente
+[2025-10-22 16:08:50] - Error: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'admin' for key 'roles.nombre'
+[2025-10-22 18:49:09] - Ejecutado sql/reset.sql correctamente
+[2025-10-22 18:49:12] - Ejecutado sql/seed.sql correctamente

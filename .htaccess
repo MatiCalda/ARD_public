@@ -1,0 +1,18 @@
+# Usa el index del FrontEnd como página por defecto
+DirectoryIndex FrontEnd/index.html
+
+RewriteEngine On
+Options -MultiViews
+
+# 1) Servir archivos estáticos del FrontEnd si existen
+RewriteCond %{REQUEST_URI} !^/api/
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# 2) SPA fallback (si usás router del lado del cliente)
+RewriteCond %{REQUEST_URI} !^/api/
+RewriteRule ^ FrontEnd/index.html [L]
+
+# 3) Redirigir /api/* a Slim (API/public/index.php)
+RewriteRule ^api/(.*)$ API/public/index.php [QSA,L]

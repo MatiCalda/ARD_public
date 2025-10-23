@@ -1,0 +1,19 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Preserva el header Authorization (útil para Slim con PHP-FPM)
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule ^ - [E=HTTP_AUTHORIZATION:%1]
+
+    # Respuesta rápida a preflight CORS (OPTIONS)
+    RewriteCond %{REQUEST_METHOD} =OPTIONS
+    RewriteRule ^ - [R=204,L]
+
+    # Si el archivo o directorio existe, lo sirve
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^ - [L]
+
+    # Si no, redirige todo a index.php
+    RewriteRule ^ index.php [QSA,L]
+</IfModule>

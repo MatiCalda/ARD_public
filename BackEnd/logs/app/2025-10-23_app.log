@@ -1,0 +1,1 @@
+[2025-10-23T12:01:34.422917-03:00] app.ERROR: App error => Not found. {"code":404,"file":"C:\\Repositorios\\ARD\\BackEnd\\vendor\\slim\\slim\\Slim\\Middleware\\RoutingMiddleware.php","line":76} []

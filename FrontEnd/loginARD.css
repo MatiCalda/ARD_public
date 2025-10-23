@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #E02937, #5f0202);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  width: 350px;
+  text-align: center;
+}
+
+.logo img {
+  width: 80px;
+  margin-bottom: 1rem;
+}
+
+.titulo-app {
+  font-family: 'Russo One', sans-serif;  
+  font-size: 1.8rem;
+  color: #E02937;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+  color: #E02937;
+}
+
+.input-group {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.input-group label {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  margin-top: 0.3rem;
+  transition: border 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #E02937;
+  outline: none;
+}
+
+button {
+  background-color: #E02937;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: #E02937;
+}
+
+.register-text {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.register-text a {
+  color: #E02937;
+  text-decoration: "ARD";
+  font-weight: 600;
+}
